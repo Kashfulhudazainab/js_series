@@ -1,0 +1,39 @@
+
+//let score="32"
+let score ="32aaa"
+
+console.log(typeof score)  // or console.log(typeof (score))->string
+
+let valueInNumber = Number(score)
+
+console.log(valueInNumber);  //NaN bcoz it is mixture of number and letters
+
+console.log(typeof valueInNumber);
+
+let math=null;
+let MathInNumber=Number(math);
+console.log(MathInNumber);  // output is 0
+
+let urdu=undefined;
+let UrduInNumber=Number(urdu);
+
+console.log(UrduInNumber);   //output is NaN
+
+//number can easily be converted
+//string+number -> NaN
+//for boolean value false ->0,for true-> 1
+//"huda" cannot be converted into number so output -> NaN
+
+// let isLoggedIn= 1; //true
+// let isLoggedIn="";   //false
+let isLoggedIn="Hitesh";  //true
+
+let BoolLoggedIn =Boolean(isLoggedIn)
+console.log(BoolLoggedIn);   
+
+
+let someNumber = 33
+
+let StringNumber= String(someNumber);
+console.log(StringNumber);  //33
+console.log(typeof StringNumber);   // although it look like a number but it is string
