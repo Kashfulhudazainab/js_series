@@ -1,0 +1,22 @@
+
+//value cannot be changed
+const accountId=122345;
+
+//accountId = 2;
+
+//console.log(accountId);
+
+let accountEmail= "huda@gmail.com"
+accountEmail="hc@gmail.com"
+
+var accountPassword ="1256789"
+accountPassword="98765"
+
+accountCity = "islamabad"   //not good approach
+accountCity="chakwal"
+
+let accountState;
+
+console.log([accountId,accountEmail,accountPassword,accountCity,accountState])
+
+/*never use var (prefered) bcoz of block scope and function scope */
