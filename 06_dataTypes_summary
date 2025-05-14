@@ -1,0 +1,20 @@
+// primitive data types(changes in copies)
+
+// string, number, boolean, null, undefined, symbol, BigInt
+
+// language is not specified in js
+
+const Score=100; //now it is number
+// const useR ;value s undefined
+const isLoggedIN= false; // no need to specify boolean
+
+const id= Symbol('123')
+const userId= Symbol('123')
+// although there values are same they are different
+console.log(id);
+console.log(userId);
+
+// reference type(non-primitive)-> reference is allocated in memory
+
+// arrays, objects, functions
+
