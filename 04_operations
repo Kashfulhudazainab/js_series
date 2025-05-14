@@ -1,0 +1,32 @@
+let value = 3;
+let negValue= -value;
+// console.log(negValue);  //-3
+
+// console.log(3*3);   //9
+// console.log(3**2) ; //3 raised to the power 2(9)
+// console.log(2/3);
+// console.log(3%2);  //modulus,remainder
+
+
+// let str1="huda";
+// let str2=" zainab";
+// let str3=str1+str2;
+// console.log(str3);
+
+
+// console.log("1"+2); // sring+number=12
+// console.log(1+"2");  //number+string=12
+// console.log("2"+1+1);  //211 (as strings)
+// console.log(1+2+"2");  //32 (first addition on numbers then concatenation)
+
+
+// console.log(true);  //output-> true
+// console.log(+true);  //output-> 1
+// console.log(true+);  //error
+
+let num1,num2,num3;
+num1=num2=num3=2+2;  // not preferred method
+
+let gameCounter=100;
+gameCounter++;
+console.log(gameCounter);
