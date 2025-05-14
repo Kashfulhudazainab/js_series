@@ -4,17 +4,56 @@
 
 // language is not specified in js
 
-const Score=100; //now it is number
-// const useR ;value s undefined
-const isLoggedIN= false; // no need to specify boolean
+// const Score=100; //now it is number
+// // const useR ;value s undefined
+// const isLoggedIN= false; // no need to specify boolean
 
-const id= Symbol('123')
-const userId= Symbol('123')
-// although there values are same they are different
-console.log(id);
-console.log(userId);
+// const id= Symbol('123')
+// const userId= Symbol('123')
+// // although there values are same they are different
+// console.log(id);
+// console.log(userId);
+// console.log(id)==console.log(userId);  //false
+
+// const BigNumber = 345678995421n;
+
 
 // reference type(non-primitive)-> reference is allocated in memory
 
 // arrays, objects, functions
 
+// const heros = ["abs" ,"dfg", "dfghh"];   // array
+// let myObj = {
+//     name :"huda",
+//     age: 20
+// }       // object
+
+// const myFun = function(){
+//     console.log("HELLO");
+// }    //function
+
+
+//Memory 
+
+// stack->primitive-> copy of variable
+// heap->non-primitive -> origina reference
+
+let YouName="hjiuygcc";
+
+let anotherName= YouName;
+
+anotherName="chai aur code";
+
+console.log(YouName);  // hjiuygcc
+console.log(anotherName);  // chai aur code
+
+let user1={
+    email:"user@gmail.com",
+    upi:"jmh"
+}
+
+let user2=user1;
+user2.email="user2@gmal.com";
+
+console.log(user1.email);  //user2@gmail.com
+console.log(user2.email);  //user2@gmail.com
