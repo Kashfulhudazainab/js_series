@@ -1,0 +1,23 @@
+"use strict";   // treat all code as newer version
+
+//alert(3+3)  we are using node.js not brower
+
+//console.log(3+3)
+//console.log("huda")
+// never write 2 consoles on same line
+
+let name = "huda" //string(single qoute / double quete)
+let age=18;  //integer
+let isLoggedIn= false;   //boolean
+
+//null -> stand alone value -> value is empty
+// undefined -> value is not defined only variable is declared
+// symbol -> uniqueness
+
+
+//object
+
+console.log(typeof "huda")  // want to know the type of "huda"
+console.log(typeof age)   //type of variable
+console.log(typeof null)  //object
+console.log(typeof undefined) //undefined
