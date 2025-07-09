@@ -33,27 +33,3 @@
 // }    //function
 
 
-//Memory 
-
-// stack->primitive-> copy of variable
-// heap->non-primitive -> origina reference
-
-let YouName="hjiuygcc";
-
-let anotherName= YouName;
-
-anotherName="chai aur code";
-
-console.log(YouName);  // hjiuygcc
-console.log(anotherName);  // chai aur code
-
-let user1={
-    email:"user@gmail.com",
-    upi:"jmh"
-}
-
-let user2=user1;
-user2.email="user2@gmal.com";
-
-console.log(user1.email);  //user2@gmail.com
-console.log(user2.email);  //user2@gmail.com
