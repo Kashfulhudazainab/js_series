@@ -26,4 +26,16 @@ function one(){
 }
 
 one();
+//child can access parent variable
 
+function addone(value){   //function
+return value+1;
+}
+
+addone(5); 
+
+const addtwo=function(value){   //expression(function can not be called before declaration)
+    return value+2
+}
+
+addtwo(8);

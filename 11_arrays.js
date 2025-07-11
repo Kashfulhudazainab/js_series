@@ -60,4 +60,5 @@ const realarray=anotheraray.flat(Infinity)
 console.log(realarray)
 
 
-console.log(Array.from("huda"))  
+console.log(Array.from("huda"))   //[ 'h', 'u', 'd', 'a' ]
+console.log(Array.from({names :"huda"}))    //object

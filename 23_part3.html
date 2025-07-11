@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>project 6</title>
+</head>
+<body style="background-color: black; color: antiquewhite;">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, numquam.</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //generate a random colour
+
+    const randomcolor=function(){
+        const hex="0123456789ABCDEF"
+        let color="#"
+        for(let i=0;i<6;i++)
+    {
+color+=hex[Math.floor(Math.random()*16)]
+    }
+    return color;
+    }
+
+     let intervalid;
+
+    const startchangingcolor=function(){
+        intervalid=setInterval(changebg,1000)
+       function changebg(){ document.body.style.backgroundColor=randomcolor();}
+    }
+
+    const stopchangingcolor=function(){
+        clearInterval(intervalid);
+        intervalid=null;
+    }
+
+    document.querySelector("#start").addEventListener('click', startchangingcolor)
+
+    document.querySelector("#stop").addEventListener('click', stopchangingcolor)
+</script>
+</html>

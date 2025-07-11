@@ -24,3 +24,7 @@ console.log(Math.floor(Date.now()/1000));    //compare in milliseconds
 
 let neww=new Date();
 console.log(neww.getDay())
+
+newDate.toLocaleString('default', {
+    weekday:"long"
+})
