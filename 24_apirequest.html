@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xml api request</title>
+</head>
+<body style="background-color: black;">
+    
+</body>
+<script>
+    const requesturl='https://api.github.com/users/huda';
+   const XHR= new XMLHttpRequest();
+   XHR.open('GET',requesturl)
+   XHR.onreadystatechange=function (){
+ consple.log(XHR.readyState)
+ if(XHR.readyState===4)
+ {
+    const data=JSON.parse(this.responseText);
+    console.log(data.followers);   //undefined bcoz data type is strinhg in reply
+ }
+   }
+
+   XHR.send();
+
+</script>
+</html>
